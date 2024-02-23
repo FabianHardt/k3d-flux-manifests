@@ -49,6 +49,6 @@ spec:
       annotations: {}
       hosts:
         - paths:
-            - path: /flux-ui
+            - path: /
               pathType: ImplementationSpecific
       tls: []
