@@ -43,4 +43,12 @@ spec:
       create: true
       passwordHash: $2a$10$HkavWyTYO.ytMAqhMLDf5.W8BfvhWAV0ny6Qk100DpxglPqMXIJ8S
       username: admin
-
+    ingress:
+      enabled: true
+      className: "kong"
+      annotations: {}
+      hosts:
+        - paths:
+            - path: /flux-ui
+              pathType: ImplementationSpecific
+      tls: []
